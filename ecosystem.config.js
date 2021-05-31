@@ -3,6 +3,7 @@ module.exports = {
     name: 'hello-world',
     version: '0.9.0',
     script: 'index.js',
+    namespace: "OnMIMIC",
     watch: 'false'
   }],
   deploy : {
@@ -13,8 +14,8 @@ module.exports = {
       repo : 'git@github.com:slewin419/nodejs-hello-world.git',
       path : '/var/www/html/nodejs-hello-world',
       'pre-deploy-local': '',
-      'post-deploy' : 'npm install && pm2 startOrRestart ecosystem.config.js --env qa --name nodejs-hello-world',
-      'post-setup': 'ls -la',
+      'post-deploy' : '',
+      'post-setup': 'npm install && pm2 startOrRestart ecosystem.config.js --env qa --name nodejs-hello-world',
       'pre-setup': ''
     }
   }
