@@ -11,3 +11,4 @@ var port = 8080;
 server.listen(port);
 
 console.log("Server running at http://localhost:%d", port);
+console.log("Updated using pm2 deploy");
